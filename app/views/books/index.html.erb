@@ -1,5 +1,10 @@
-<h1>List of Books</h1>
-
-<% @books.each do |book| %>
-	<%= book.title %> <br>
-<% end %>
+<h1>List of all the books:</h1>
+  
+ <% @books.each do |book| %>
+ <ul>
+ 	<li>
+ 		<%= book.title %>
+ 		<%= book.author %>
+ 	</li>
+ </ul>
+ <% end %>
